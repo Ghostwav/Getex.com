@@ -1,4 +1,4 @@
-import { ArrowDown, Zap, Play, TrendingUp, Keyboard } from 'lucide-react'
+import { ArrowDown, Play, TrendingUp, Keyboard, Tv } from 'lucide-react'
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -45,15 +45,15 @@ export default function Hero() {
           <button onClick={() => scrollTo('anime')} className="btn-primary">
             <Play className="w-4 h-4" /> Watch Anime
           </button>
-          <a href="https://t.me/GhostwavTech_bot" target="_blank" rel="noopener noreferrer" className="btn-outline">
-            <Zap className="w-4 h-4" /> Open Bot
-          </a>
+          <button onClick={() => scrollTo('boost')} className="btn-outline">
+            <TrendingUp className="w-4 h-4" /> Boost Socials
+          </button>
         </div>
 
         {/* Feature pills */}
         <div className="flex flex-wrap justify-center gap-3 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           {[
-            { icon: <Play className="w-4 h-4 text-primary" />, label: 'Anime Streaming' },
+            { icon: <Tv className="w-4 h-4 text-primary" />, label: '50+ Anime — Watch Free' },
             { icon: <TrendingUp className="w-4 h-4 text-secondary" />, label: 'Social Media Boost' },
             { icon: <Keyboard className="w-4 h-4 text-purple-400" />, label: '50+ Keyboard Styles' },
           ].map(item => (
