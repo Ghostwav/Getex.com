@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import AnimeSection from './sections/AnimeSection'
@@ -28,15 +29,17 @@ export default function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-dark noise-bg">
-      <Navbar activeSection={activeSection} />
-      <main>
-        <Hero />
-        <AnimeSection />
-        <SocialBoostSection />
-        <KeyboardSection />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-surface transition-colors duration-300">
+        <Navbar activeSection={activeSection} />
+        <main>
+          <Hero />
+          <AnimeSection />
+          <SocialBoostSection />
+          <KeyboardSection />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   )
 }
