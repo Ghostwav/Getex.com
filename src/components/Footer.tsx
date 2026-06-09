@@ -45,9 +45,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Telegram */}
+          {/* Social Boost via Telegram */}
           <div>
-            <h4 className="font-bold mb-4" style={{ color: 'var(--color-text)' }}>Connect With Us</h4>
+            <h4 className="font-bold mb-4" style={{ color: 'var(--color-text)' }}>Social Media Boost</h4>
             <a
               href="https://t.me/GhostwavTech_bot"
               target="_blank"
@@ -60,7 +60,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>@GhostwavTech_bot</p>
-                <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>Telegram Bot</p>
+                <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>Boost your socials via Telegram</p>
               </div>
               <ExternalLink className="w-4 h-4 ml-auto group-hover:text-primary transition-colors" style={{ color: 'var(--color-text-subtle)' }} />
             </a>
